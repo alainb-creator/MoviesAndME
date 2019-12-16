@@ -3,11 +3,14 @@
 import React from 'react'
 import { StyleSheet, Image } from 'react-native'
 import {createAppContainer } from 'react-navigation'
-import {createBottomTabNavigator} from 'react-navigation-tabs'
+import {createBottomTabNavigator, createTabNavigator} from 'react-navigation-tabs'
 import {createStackNavigator} from 'react-navigation-stack'
 import Search from '../Components/Search'
 import FilmDetail from '../Components/FilmDetail'
 import Favorites from '../Components/Favorites'
+import Test from '../Components/Test'
+
+
 
 const SearchStackNavigator = createStackNavigator({
   Search: {
@@ -32,9 +35,12 @@ const FavoritesStackNavigator = createStackNavigator({
     screen: FilmDetail
   }
 })
-
 const MoviesTabNavigator = createBottomTabNavigator(
-  {
+  { // rajout de test pour affichage vue test
+    Test: {
+      screen: Test
+    },
+
     Search: {
       screen: SearchStackNavigator,
       navigationOptions: {
