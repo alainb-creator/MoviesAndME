@@ -1,7 +1,7 @@
 // Navigation/Navigations.js
 
 import React from 'react'
-import { StyleSheet, Image } from 'react-native'
+import { StyleSheet, Image,View } from 'react-native'
 import {createAppContainer } from 'react-navigation'
 import {createBottomTabNavigator, createTabNavigator} from 'react-navigation-tabs'
 import {createStackNavigator} from 'react-navigation-stack'
@@ -37,16 +37,17 @@ const FavoritesStackNavigator = createStackNavigator({
 })
 const MoviesTabNavigator = createBottomTabNavigator(
   { // rajout de test pour affichage vue test
-    Test: {
+  /* Test: {
       screen: Test
     },
-
+*/
     Search: {
       screen: SearchStackNavigator,
       navigationOptions: {
         tabBarIcon: () => {
           return <Image
             source={require('../Images/ic_search.png')}
+            
             style={styles.icon}/>
         }
       }
