@@ -25,6 +25,11 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "android": {
+      "package": "com.alainbcreator.moviesandme"
+    },
+    "description": "",
+    "githubUrl": "https://github.com/alainb-creator/MoviesAndME"
   }
 }
