@@ -30,6 +30,9 @@
       "package": "com.alainbcreator.moviesandme"
     },
     "description": "",
-    "githubUrl": "https://github.com/alainb-creator/MoviesAndME"
-  }
+    "githubUrl": "https://github.com/alainb-creator/MoviesAndME",
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "Movies and Me",
+  "name": "MoviesAndMe"
 }
